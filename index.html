@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lookshop</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <header class="main-header">
+      <div class="settings">
+        <div class="container container-settings">
+          <div class="customer-care">
+            <span>Custom care:</span>
+            <span class="phone">888-23-4567</span>
+          </div>
+          <div class="customer-settings">
+            <button class="money">$ US</button>
+            <button class="account">My Account</button>
+            <button class="search">Search</button>
+          </div>
+        </div>
+      </div>
+      <nav class="container container-nav">
+        
+        <picture>
+            <source srcset="img/logo_sm.png" media="(max-width: 640px)">
+            <img class="top-logo" src="img/logo.png" alt="lookshop logo"/>
+        </picture>
+
+        <input type="checkbox" id="checkbox-menu" class="checkbox-menu">
+        <label for="checkbox-menu" class="checkbox-menu-label">Menu</label>
+        <ul class="top-nav">
+          <li>
+            <a href="#">new</a>
+          </li>
+          <li>
+            <a href="#">designers</a>
+          </li>
+          <li>
+            <a href="#">women</a>
+          </li>
+          <li>
+            <a href="#">men</a>
+          </li>
+          <li>
+            <a href="#">clearance</a>
+          </li>
+        </ul>
+        <div class="cart">
+          <button class="cart-open">Your cart</button>
+          <div class="cart-total"><span>0 items</span>  |  <span>$ 0</span></div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="slider">
+        <div class="container container-slider">
+          <div class="slider-item">
+            <picture>
+                <source srcset="img/top_banner768.jpg" media="(max-width: 768px)">
+                <img src="img/top_banner.jpg" alt="Crazy Summer">
+            </picture>
+            <button class="arrow-icon">Shop now</button>
+          </div>
+          <div class="slider-navs">
+            <button class="slider-nav slider-nav--prev"></button>
+            <button class="slider-nav slider-nav--next"></button>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <form action="#">
+            <label for="radio1"></label><input id="radio1" type="radio" name="ph">
+            <label for="radio2"></label><input id="radio2" type="radio" name="ph" checked>
+            <label for="radio3"></label><input id="radio3" type="radio" name="ph">
+            <label for="radio4"></label><input id="radio4" type="radio" name="ph">
+            <label for="radio5"></label><input id="radio5" type="radio" name="ph">
+          </form>
+        </div>
+      </section>
+      
+      <section class="smm">
+        <div class="container container-smm">
+          <div class="smm-subscribe">
+            <h3>Stay updated</h3>
+            <form class="smm-form" action="#">
+              <input type="email" placeholder="Your email address">
+              <input type="submit" value="+">
+            </form>
+          </div>
+          <div class="smm-find-us">
+            <h3>Find us here</h3>
+            <ul>
+              <li><button class="socialfind socialfind--fb">Facebook</button></li>
+              <li><button class="socialfind socialfind--tw">Twitter</button></li>
+              <li><button class="socialfind socialfind--pi">Pinterest</button></li>
+            </ul>
+          </div>
+        </div>
+   
+      </section>
+
+      <section class="banners">
+        <div class="container container-banners">
+          <div class="banner-item banner-item--huge">
+            
+          </div>
+          
+          <div class="banner-item banner-item--top">
+            
+          </div>
+          
+          <div class="banner-item banner-item--tiny1">
+            
+          </div>
+          
+          <div class="banner-item banner-item--tiny2">
+            <button class="banner-cta arrow-icon">Shop Now</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop">
+        <div class="container container-shop">
+          
+          <div class="tabbar">
+            <ul>
+              <li><button class="tab-btn active">What’s hot?</button></li>
+              <li><button class="tab-btn">Designers</button></li>
+              <li><button class="tab-btn">Featured</button></li>
+              <li><button class="tab-btn">Latest</button></li>
+            </ul>
+          </div>
+          
+          <div class="scrollbar">
+            <ul>
+              <li><button class="btn-arrow btn-arrow--prev">Previous</button></li>
+              <li><button class="btn-arrow active">Next</button></li>
+            </ul>
+          </div>
+          
+          
+        </div>
+        
+        
+      
+        <div class="container container-shop-items">
+          <div class="shop-content">
+            <div class="shop-item">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item shop-item--sale">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item shop-item--active">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item shop-item--sale">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>          
+          </div>
+        </div>
+        
+        <button class="shop-load-more">Load More</button>
+      </section>
+      
+      <section class="clearance">
+        <h2>Clearance</h2>
+        <div class="container container-clearance">
+            <div class="shop-item">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+            <div class="shop-item">
+              <div class="photo">
+                <picture>
+                  <source srcset="img/item_sm.jpg" media="(max-width: 640px)">
+                  <img src="img/hot_shorts.jpg" alt="Hot Shorts">
+                </picture>
+              </div>
+              <h3>Hot Shorts</h3>
+              <h4 class="price">
+                <span class="currency">$</span><span class="value">35.95</span>
+              </h4>
+              <button class="btn-add">Add to Cart</button>
+            </div>
+        </div>
+        <button class="shop-load-more">Load More</button>
+      </section>
+      
+      <section class="brands">
+        <h2>Favourite brands</h2>
+        <div class="container container-brands">
+          <a href="#" class="brand brand--addict">Addict</a>
+          <a href="#" class="brand brand--abandon">Abandon</a>
+          <a href="#" class="brand brand--adidas">Adidas</a>
+          <a href="#" class="brand brand--boy">Boy London</a>
+          <a href="#" class="brand brand--converse">Converse</a>
+          <a href="#" class="brand brand--ck">Calvin Klein</a>
+          <a href="#" class="brand brand--edwin">Edwin</button>
+          <a href="#" class="brand brand--grenson">Grenson</a>
+        </div>
+      </section>
+      
+      <section class="about">
+        <h2>About LookShop</h2>
+        <div class="container container-about">
+          <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue.</p>
+        </div>
+      </section>
+      
+      <section class="accept">
+        <h2>We accept</h2>
+        <ul>
+          <li>
+            <div class="payment payment--visa">Visa</div>
+          </li>
+          <li>
+            <div class="payment payment--mastercard">MasterCard</div>
+          </li>
+          <li>
+            <div class="payment payment--paypal">PayPal</div>
+          </li>
+          <li>
+            <div class="payment payment--aexp">American Express</div>
+          </li>
+          <li>
+            <div class="payment payment--visa-electron">Visa Electron</div>
+          </li>
+          <li>
+            <div class="payment payment--laser">Laser</div>
+          </li>
+          <li>
+            <div class="payment payment--maestro">Maestro</div>
+          </li>
+          <li>
+            <div class="payment payment--delta">Delta</div>
+          </li>
+          <li>
+            <div class="payment payment--solo">Solo</div>
+          </li>
+          <li>
+            <div class="payment payment--idea">iDea</div>
+          </li>
+          <li>
+            <div class="payment payment--dk">DK</div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container container-footer">
+        <div class="footer-service">
+          <h3>Customer Service</h3>
+          <ul>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Terms of payment</a></li>
+            <li><a href="#">Terms of sale</a></li>
+            <li><a href="#">Delivery terms and conditions</a></li>
+            <li><a href="#">Returns and Refunds</a></li>
+          </ul>
+        </div>
+        <div class="footer-information">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="#">Affiliate</a></li>
+            <li><a href="#">Cookies</a></li>
+            <li><a href="#">How to Shop</a></li>
+            <li><a href="#">About Nelly</a></li>
+            <li><a href="#">Investor relations</a></li>
+          </ul>
+        </div>
+        <div class="footer-campaigns">
+          <h3>Campaigns</h3>
+          <ul>
+            <li><a href="#">Evening dresses</a></li>
+            <li><a href="#">Makeup</a></li>
+            <li><a href="#">Fashion forward</a></li>
+            <li><a href="#">Training clothes</a></li>
+            <li><a href="#">Special Occasion Dresses</a></li>
+          </ul>
+        </div>
+        <div class="footer-stores">
+          <h3>Stores</h3>
+          <ul>
+            <li><a href="#">Paris</a></li>
+            <li><a href="#">New York</a></li>
+            <li><a href="#">London</a></li>
+            <li><a href="#">Madrid</a></li>
+            <li><a href="#">Tokio</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h3>Social</h3>
+          <ul class="ul-social">
+            <li><a href="#" class="social social--tw">Twitter</a></li>
+            <li><a href="#" class="social social--pi">Pinterest</a></li>
+            <li><a href="#" class="social social--fb">Facebook</a></li>
+            <li><a href="#" class="social social--gp">Google+</a></li>
+            <li><a href="#" class="social social--tm">Tumblr</a></li>
+            <li><a href="#" class="social social--vi">Vimeo</a></li>
+          </ul>
+        </div>
+        <div class="footer-image">
+          <img class="secured100" src="img/secured.png" alt="100% secured" />
+        </div>
+      </div>
+      
+      <div class="copyright">
+        <div class="container container-copyright">
+          <ul>
+            <li><a href="#">Privacy &amp; Cookies</a></li>
+            <li><a href="#">Terms &amp; Conditions</a></li>
+            <li><a href="#">Accessibility</a></li>
+            <li><a href="#">Store Directory</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+          <span class="copy">
+            <a href="http://lookshop.com">© LookShop.com</a> All Rights Reserved
+          </span>
+        </div>  
+      </div>
+
+    </footer>
+  </body>
+</html>
