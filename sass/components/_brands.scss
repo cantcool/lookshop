@@ -1,0 +1,90 @@
+.brands {
+  padding-bottom: 18px;
+  border-bottom: $header-lined-border-style;
+  overflow-x: hidden;
+
+  h2 {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #414141;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: white;
+    padding: 0 18px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-top: $header-lined-border-style;
+      width: 4000px;
+      height: 1px;
+      left: 50%;
+      margin-left: -2000px;
+      margin-top: -9px;
+      z-index: -1;
+    }
+  }
+}
+
+.container-brands {
+  white-space: nowrap;
+}
+
+.brand {
+  display: inline-block;
+  width: 114px;
+  height: 61px;
+  background-image: url(../img/brands.png);
+  background-repeat: no-repeat;
+  margin: 0px 23px;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &--addict {
+    width: 83px;
+    background-position: -2px 0;
+  }
+
+  &--abandon {
+    width: 52px;
+    background-position: -129px 0;
+  }
+
+  &--adidas {
+    width: 57px;
+    background-position: -233px 0;
+  }
+
+  &--boy {
+    width: 54px;
+    background-position: -346px 0;
+  }
+
+  &--converse {
+    width: 86px;
+    background-position: -446px 0;
+  }
+
+  &--ck {
+    width: 100px;
+    background-position: -578px 0;
+  }
+
+  &--edwin {
+    width: 69px;
+    background-position: -720px 0;
+  }
+
+  &--grenson {
+    width: 134px;
+    background-position: -843px 0;
+  }
+}

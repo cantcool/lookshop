@@ -1,0 +1,61 @@
+.banners {
+  padding: 40px 0 52px;
+}
+
+.container-banners {
+  width: $container-size-full;
+  height: 340px;
+  font-size: 0;
+  display: grid;
+  grid-template-columns: 485px 245px;
+  grid-template-rows: 170px;
+  grid-template-areas: 
+    "lg md md"
+    "lg sm1 sm2";
+}
+
+.banner-item {
+  position: relative;
+  grid-area: md;
+  background-image: url(../img/middle_banners.jpg);
+  background-repeat: no-repeat;
+  
+  &--huge {
+    grid-area: lg;
+    background-position: top left;
+  }
+
+  &--top {
+    background-position: -485px top;
+  }
+
+  &--tiny1 {
+    grid-area: sm1;
+    background-position: -485px bottom;
+  }
+
+  &--tiny2 {
+    grid-area: sm2;
+    background-position: right bottom;
+  }
+}
+
+
+
+.banner-cta {
+  width: 98px;
+  height: 30px;
+  position: absolute;
+  top: 123px;
+  left: 29px;
+  border: none;
+  background-color: #4fafa0;
+  font-size: 12px;
+  text-align: left;
+  padding: 2px 7px;
+
+  .arrow-icon::after {
+    right: 11px;
+    margin-top: -4px;
+  }
+}

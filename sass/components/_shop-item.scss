@@ -1,0 +1,126 @@
+.shop-item {
+  vertical-align: top;
+  position: relative;
+  display: inline-block;
+  margin: 30px 15px 0px;
+  width: 220px;
+  height: 395px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
+  transition: all 0.3s ease-out;
+
+  .photo {
+    overflow: hidden;
+    position: relative;
+    height: 291px;
+    transition: height 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  h3 {
+    margin: 10px 0 5px;
+    padding: 0;
+    font-size: 12px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  h4 {
+    margin: 6px;
+    padding: 0;
+    font-size: 22px;
+    font-weight: normal;
+  }
+
+  .btn-add {
+    position: relative;
+    font-size: 12px;
+    padding: 8px 30px 8px 10px;
+
+    &::after {
+      content: '+';
+      position: absolute;
+      font-size: 20px;
+      font-weight: bold;
+      right: 12px;
+      top: 5px;
+    }
+  }
+
+  &--active,
+  &:hover {
+    height: 415px;
+    width: 240px;
+    transform: translate3d(-8px, -8px, 0);
+    margin-right: -5px;
+
+    & > .photo::before,
+    & > .photo::before {
+      position: absolute;
+      content: 'SHOP IT';
+      color: #fff;
+      top: 50%;
+      left: 50%;
+      margin-left: -67px;
+      margin-top: -58px;
+      width: 134px;
+      height: 134px;
+      background-color: #3d3d3d;
+      border-radius: 50%;
+      font-size: 12px;
+      line-height: 175px;
+    }
+  }
+
+  &--active .photo,
+  &:hover .photo {
+    height: 309px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      margin-left: -16px;
+      margin-top: -15px;
+      background-image: $icon-sprite01-url;
+      background-repeat: no-repeat;
+      background-position: -65px -5px;
+      width: 30px;
+      height: 32px;
+    }
+  }
+
+  &--sale {
+    &::before {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      font-size: 10px;
+      text-align: left;
+      content: 'SALE';
+      padding: 5px;
+      color: #fff;
+      background-color: #4c4c4c;
+      z-index: 9;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      content: '';
+      width: 0;
+      height: 0;
+      top: 0;
+      left: 0;
+      border-style: solid;
+      border-width: 0 0 50px 50px;
+      border-color: transparent transparent #fff transparent;
+      z-index: 10;
+    }
+  }
+}

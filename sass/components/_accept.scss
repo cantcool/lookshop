@@ -1,0 +1,81 @@
+.accept {
+  background-color: #f7f7f7;
+  height: 56px;
+  padding: 11px;
+  margin-left: -20px;
+
+  h2 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #414141;
+    font-size: 12px;
+    margin-right: 3px;
+  }
+
+  ul {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+}
+
+
+.payment {
+  display: inline-block;
+  background-image: url(../img/payments.png);
+  width: 34px;
+  height: 22px;
+  margin: 0 0 0 10px;
+
+  &--visa {
+    background-position: 0 0;
+  }
+
+  &--mastercard {
+    background-position: -44px 0;
+  }
+
+  &--paypal {
+    background-position: -88px 0;
+  }
+
+  &--aexp {
+    background-position: -132px 0;
+  }
+
+  &--visa-electron {
+    background-position: -176px 0;
+  }
+
+  &--laser {
+    background-position: -220px 0;
+  }
+
+  &--maestro {
+    background-position: -265px 0;
+  }
+
+  &--delta {
+    background-position: -309px 0;
+  }
+
+  &--solo {
+    background-position: -353px 0;
+  }
+
+  &--idea {
+    background-position: -397px 0;
+  }
+
+  &--dk {
+    background-position: -442px 0;
+  }
+}
+

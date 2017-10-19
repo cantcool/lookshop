@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+/*  margin: 0;*/
+  padding: 0;
+  width: 100%;
+  min-width: 1202px;
+/*  width: 1202px;*/
+  height: 100%;
+
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  color: $font-color-main;
+  background-color: $bg-color;
+  padding-bottom: $footer-height-normal;
+  font-family: $font-family-main;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  line-height: 23px;
+}
+
+main {
+  min-height: calc(100vh - $header-height-normal - $footer-height-normal);
+  font-size: 0;
+}
+
+.container {
+  width: $container-size-full;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  height: 1px;
+  clear: both;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+button,
+input[type="submit"] {
+  color: #fff;
+  background-color: $input-color;
+  border: none;
+  border-bottom: $input-bottom-line-style;
+  text-transform: uppercase;
+}

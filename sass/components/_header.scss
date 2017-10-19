@@ -1,0 +1,95 @@
+header {
+  min-height: $header-height-normal;
+}
+
+.container-settings {
+  width: $container-size-full;
+}
+
+.settings {
+  background-color: #000;
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.customer-care {
+  padding: 8px 0px;
+}
+
+.phone {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.customer-settings {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0;
+
+  button {
+    position: relative;
+    vertical-align: top;
+    font-size: 11px;
+    height: 30px;
+    min-width: 35px;
+    background-color: inherit;
+    border: none;
+    border-right: $header-border-style;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0 15px;
+
+    &:nth-child(1) {
+      border-left: $header-border-style;
+    }
+  }
+
+  .money {
+    padding-right: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: 15px;
+      top: 12px;
+      background-image: $icon-sprite01-url;
+      width: 4px;
+      height: 7px;
+      background-position: -51px -5px; 
+      transform: rotate(90deg);
+    }
+  }
+
+  .account {
+    padding-left: 38px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 14px;
+      background-image: $icon-sprite01-url;
+      background-position: -5px -5px; 
+      width: 15px;
+      height: 20px;
+    }
+  }
+
+  .search {
+    font-size: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: $icon-sprite01-url;
+      width: 15px;
+      height: 15px;
+      background-position: -183px -5px;
+      top: 8px;
+      left: 8px;
+    }
+  }
+}
+
+

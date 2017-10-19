@@ -1,0 +1,123 @@
+.smm {
+  background-color: #ededed;
+  margin: 0;
+  padding: 0;
+  color: #6b6b6b;
+  font-size: 11px;
+  height: 55px;
+
+  h3 {
+    margin: 0 4px 0 0;
+    padding: 8px 0;
+    font-size: 12px;
+    font-weight: normal;
+    vertical-align: middle;
+    display: inline-block;
+  }
+}
+
+.container-smm {
+  padding: 13px 0;
+  text-align: left;
+}
+
+.smm-form {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  height: 28px;
+  margin: 0;
+
+  input {
+    border: none;
+    padding: 7px 8px;
+    vertical-align: top;
+  }
+
+  input[type="email"] {
+    font-style: italic;
+    color: #9f9f9f;
+    font-size: 12px;
+    width: 131px;
+  }
+
+  input[type="submit"] {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 10px;
+    border-bottom: 3px solid #dd6b44;
+    height: 29px;
+  }
+
+}
+
+
+
+
+.smm-find-us {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 0;
+  height: 55px;
+
+  h3 {
+    margin: 12px 15px 0 0;
+    vertical-align: top;
+  }
+
+  ul {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    padding: 0;
+
+    &:nth-child(2n+1) .socialfind {
+      background-color: #f7f7f7;
+    }
+  }
+
+  .socialfind {
+    width: 55px;
+    height: 55px;
+    border: none;
+    background-color: inherit;
+    margin: 0;
+    padding: 0;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      background-image: url(../img/icons.png);
+      background-repeat: no-repeat;
+      width: 0;
+      height: 0;
+    }
+
+    &--fb::after {
+      background-position: -208px -5px;
+      width: 9px;
+      height: 18px;
+    }
+
+    &--tw::after {
+      background-position: -259px -5px;
+      width: 21px;
+      height: 17px;
+    }
+
+    &--pi::after {
+      background-position: -227px -5px;
+      width: 22px;
+      height: 21px;
+    }
+  }
+}

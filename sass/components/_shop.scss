@@ -1,0 +1,98 @@
+$shop-content-width-full: 3000px;
+$shop-content-demo-indent: -150px;
+
+.shop {
+  overflow: hidden;
+  position: relative;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+  }
+
+  .tab-btn {
+    font-size: 15px;
+    background-color: #fff;
+    color: #555555;
+    padding: 14px 19px;
+    border: none;
+  }
+
+  button {
+    &:hover,
+    &.active {
+      background-color: #fd926d;
+      color: #fff;
+    }
+  }
+
+  .scrollbar {
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .btn-arrow {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    width: 47px;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+
+    &--prev {
+      transform: scaleX(-1);
+    }
+
+    &::after {
+      content: '>';
+      position: absolute;
+      top: 10px;
+      left: 18px;
+      width: 14px;
+      height: 27px;
+      background-position: -160px -5px;
+      background-image: url(../img/icons.png);
+    }
+
+    &:hover::after,
+    &.active::after {
+      background-position: -135px -5px;
+    }
+  }
+}
+
+.container-shop {
+  width: $container-size-full;
+  text-align: left;
+}
+
+.shop-content {
+  background-color: $accent-color;
+  white-space: nowrap;
+  min-width: $shop-content-width-full;
+  max-width: $shop-content-width-full;
+  width: $shop-content-width-full;
+  min-height: 455px;
+}
+
+.container-shop-items {
+  text-align: left;
+  width: $shop-content-width-full;
+  left: $shop-content-demo-indent;
+  min-height: 455px;
+  overflow: hidden;
+}
+
+.shop-load-more {
+  display: none;
+}

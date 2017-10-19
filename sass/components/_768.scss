@@ -1,0 +1,281 @@
+/* 768 */ 
+
+@media screen and (max-width:768px) {
+  body {
+/*
+    min-width: 640px;
+    max-width: 768px;
+    width: 100%;
+*/
+    min-width: 768px;
+    max-width: 768px;
+    width: 768px;
+  }
+  
+  .top-logo {
+    margin: 42px 14px;
+  }
+  
+  .top-nav {
+    margin-top: 9px;
+  }
+    
+  .top-nav li {
+    width: 100%;
+    margin: 2px 15px 2px;
+    padding: 5px;
+    display: block;
+    background-color: #fd926d;
+  }
+  
+  .top-nav li a {
+    margin: 0;
+    padding: 0;
+    line-height: 35px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  .checkbox-menu ~ .top-nav {
+    display: none;
+  }
+  
+  .checkbox-menu:checked ~ .top-nav {
+    display: block;
+    position: static;
+  }
+  
+  .checkbox-menu ~ label {
+    display: block;
+  }
+  
+  .checkbox-menu {
+/*    display: none;*/
+    margin-left: -9999px;
+  }
+  
+  .checkbox-menu:checked ~ label {
+/*    display: none;*/
+  }
+  
+  .checkbox-menu-label {
+    position: relative;
+    text-transform: uppercase;
+    margin: 90px 15px 16px;
+    padding: 16px;
+    left: 0;
+    font-size: 18px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    color: #fff;
+    background-color: #fd926d;
+    cursor: pointer;
+  }
+  
+  .checkbox-menu-label:after {
+    content: '';
+    position: absolute;
+    right: 56px;
+    top: 15px;
+    height: 20px;
+    width: 22px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAUBAMAAAB7UtADAAAAD1BMVEUAAAD///////////////+PQt5oAAAABHRSTlMA5kpJG2qUMwAAAB1JREFUCNdjMHSBAWEGETjbEYWtCGcLMZAIBpv5AAusIBR+XNanAAAAAElFTkSuQmCC');
+  }
+  
+  
+  .cart {
+    right: 23px;
+  }
+  
+  .container {
+    max-width: 768px;
+    width: 100%;
+  }
+  
+  .container-settings,
+  .container-smm,
+  .container-shop,
+  .container-about {
+    margin-left: 13px;
+    max-width: 720px;
+    width: 100%;
+  }
+  
+  .container.container-shop-items {
+    max-width: 3000px;
+    width: 3000px;
+  }
+  
+  
+  
+  /* SLIDER */ 
+  
+  .container-slider {
+    height: 351px;
+  }
+  
+  .slider-item button {
+    position: absolute;
+    top: 253px;
+    left: 145px;
+    font-size: 12px;
+    padding: 14px 36px 11px 17px;
+  }
+      
+  button.arrow-icon::after {
+    right: 17px;
+    margin-top: -2px;
+    border-width: 3px 0 3px 4px;
+  }
+  
+  .slider-controls {
+    height: 55px;
+  }
+
+  .slider input[type="radio"] {
+    margin: 22px 8px;
+  }
+  
+  
+  /* BANNERS */ 
+  
+  .banners {
+    padding: 32px 0 35px 15px;
+  }
+
+  .container-banners {
+    height: 256px;
+    font-size: 0;
+    display: grid;
+    grid-template-columns: 365px 185px;
+    grid-template-rows: 129px;
+    grid-template-areas: 
+      "lg md md"
+      "lg sm1 sm2";
+  }
+
+  .banner-item  {
+    position: relative;
+    grid-area: md;
+    background-image: url(../img/middle_banners768.jpg);
+    background-repeat: no-repeat;
+
+  }
+
+  .banner-item--huge {
+    grid-area: lg;
+    background-position: top left;
+  }
+
+  .banner-item--top {
+    background-position: -365px top;
+  }
+
+  .banner-item--tiny1 {
+    grid-area: sm1;
+    background-position: -365px bottom;
+  }
+
+  .banner-item--tiny2 {
+    grid-area: sm2;
+    background-position: -550px bottom;
+  }
+
+  .banner-cta {
+    width: 74px;
+    height: 22px;
+    position: absolute;
+    top: 92px;
+    left: 21px;
+    border: none;
+    background-color: #4fafa0;
+    font-size: 9px;
+    text-align: left;
+    padding: 2px 7px;
+  }
+
+  .banner-cta.arrow-icon::after {
+    right: 7px;
+    margin-top: -3px;
+  }
+
+  
+  
+  
+  /* CLEARANCE */
+  
+  
+  .clearance {
+    min-height: 626px;
+  }
+
+  
+  .clearance h2 {
+    width: 766px;
+  }
+
+  .container.container-clearance {
+    min-width: 1000px;
+  }
+  
+
+  
+  /* BRANDS */ 
+  
+  .container-brands {
+    margin-left: 45px;
+  }
+  
+  
+  
+  /* FOOTER */
+  
+  footer {
+    text-align: left;
+  }
+  
+
+  
+  .container.container-footer {
+    margin-left: 14px;
+    width: 691px;
+    min-width: 701px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: flex-start;
+    padding-bottom: 26px;
+  }
+  
+  .footer-service {
+    width: 202px;
+    height: 172px;
+  }
+  
+  .footer-information {
+    width: 204px;
+  }
+  
+  .footer-social {
+    width: 187px;
+  }
+  
+  .footer-campaigns {
+    order: 4;
+    width: 200px;
+  }
+  
+  .footer-stores {
+    order: 5;
+    width: 100px;
+  }
+  
+  
+  .container.container-copyright {
+    margin-left: 14px;
+    width: 675px;
+    min-width: 731px;
+  }
+  
+}
