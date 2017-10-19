@@ -1395,12 +1395,13 @@ footer a {
   .container-shop,
   .container-about {
     margin-left: 13px;
-    max-width: 732px;
+    max-width: 720px;
     width: 100%;
   }
   
   .container.container-shop-items {
     max-width: 3000px;
+    width: 3000px;
   }
   
   
@@ -1503,7 +1504,7 @@ footer a {
   
   
   .clearance {
-    min-height: 625px;
+    min-height: 626px;
   }
 
   
